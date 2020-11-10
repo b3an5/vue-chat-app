@@ -3,7 +3,7 @@
         <b-jumbotron 
                         header="vue.js chat"
                         lead="powered by channels sdk and bootstrap-vue"
-                        bg-varient='info'
+                        bg-varient="info"
                         text-variant="white"
         >
             <p>For more info visit this website</p>
