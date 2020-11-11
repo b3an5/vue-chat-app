@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <vue-headful title="Bean Chat"/>
     <router-view/>
   </div>
 </template>

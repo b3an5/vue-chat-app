@@ -1,5 +1,6 @@
 <template>
     <div class='login'>
+        <vue-headful title="Login"/>
         <b-jumbotron 
                         header="Bean Chat"
                         lead="powered by channels sdk and bootstrap-vue"
