@@ -1,9 +1,9 @@
 <template>
     <div class='login'>
         <b-jumbotron 
-                        header="vue.js chat"
+                        header="Bean Chat"
                         lead="powered by channels sdk and bootstrap-vue"
-                        bg-varient="info"
+                        bg-variant="info"
                         text-variant="white"
         >
             <p>For more info visit this website</p>
