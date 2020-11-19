@@ -37,7 +37,7 @@ export default {
   margin-bottom: 15px;
   padding-right: 15px;
 }
-.message-group {
+.message-group 
   height: 65vh !important;
   overflow-y: scroll;
 }
