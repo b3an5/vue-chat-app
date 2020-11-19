@@ -37,7 +37,7 @@ export default {
 <style>
 .message-list {
   margin-bottom: 15px;
-                                                                                                                                                                      b  padding-right: 15px;
+  padding-right: 15px;
 }
 .message-group {
   height: 65vh !important;
