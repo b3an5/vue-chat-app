@@ -1,35 +1,35 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import VuexPersistence from 'vuex-persist'
+import Vue from "vue";
+import Vuex from "vuex";
+import VuexPersistence from "vuex-persist";
 // import Mutations from './mutations'
 // import Actions from './actions'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
-const debug = process.env.NODE_ENV !== 'production'
+const debug = process.env.NODE_ENV !== "production";
 
 const vuexLocal = new VuexPersistence({
-    storage: window.localStorage
-})
+  storage: window.localStorage,
+});
 
 export default new Vuex.Store({
-    state: {
-        loading: false,
-        sending: false,
-        error: null,
-        user: [],
-        reconnect: false,
-        activeRoom: null,
-        rooms:[],
-        users: [],
-        messages:[],
-        userTyping: null
-    },
-    getters: {
-        hasError: state => state.error ? true: false
-    },
-    // mutations,
-    // actions,
-    plugins: [vuexLocal.plugin],
-    strict: debug
-})
+  state: {
+    loading: false,
+    sending: false,
+    error: null,
+    user: [],
+    reconnect: false,
+    activeRoom: null,
+    rooms: [],
+    users: [],
+    messages: [],
+    userTyping: null,
+  },
+  getters: {
+    hasError: (state) => (state.error ? true : false),
+  },
+  // mutations,
+  // actions,
+  plugins: [vuexLocal.plugin],
+  strict: debug,
+});

@@ -1,8 +1,12 @@
 <template>
   <div class="message-list">
     <h4>Messages</h4>
-    <hr>
-    <div id="chat-messages" class="message-group" v-chat-scroll="{smooth: true}">
+    <hr />
+    <div
+      id="chat-messages"
+      class="message-group"
+      v-chat-scroll="{ smooth: true }"
+    >
       <div class="message" v-for="(message, index) in messages" :key="index">
         <div class="clearfix">
           <h4 class="message-title">{{ message.name }}</h4>
@@ -20,22 +24,20 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from "vuex";
 
 export default {
-  name: 'message-list',
+  name: "message-list",
   computed: {
-    ...mapState([
-      'messages',
-    ])
-  }
-}
+    ...mapState(["messages"]),
+  },
+};
 </script>
 
 <style>
 .message-list {
   margin-bottom: 15px;
-  padding-right: 15px;
+                                                                                                                                                                      b  padding-right: 15px;
 }
 .message-group {
   height: 65vh !important;
@@ -49,7 +51,7 @@ export default {
 }
 .message-title {
   font-size: 1rem;
-  display:inline;
+  display: inline;
 }
 .message-text {
   color: gray;

@@ -1,16 +1,18 @@
 <template>
-    <div class='login'>
-        <vue-headful title="Login"/>
-        <b-jumbotron 
-                        header="Bean Chat"
-                        lead="powered by channels sdk and bootstrap-vue"
-                        bg-variant="info"
-                        text-variant="white"
-        >
-            <p>For more info visit this website</p>
-            <b-btn target="_blank" href="https://pusher.com/channels">More Info</b-btn>
-        </b-jumbotron>
-        <b-container>
+  <div class="login">
+    <vue-headful title="Login" />
+    <b-jumbotron
+      header="Bean Chat"
+      lead="powered by channels sdk and bootstrap-vue"
+      bg-variant="info"
+      text-variant="white"
+    >
+      <p>For more info visit this website</p>
+      <b-btn target="_blank" href="https://pusher.com/channels"
+        >More Info</b-btn
+      >
+    </b-jumbotron>
+    <b-container>
       <b-row>
         <b-col lg="4" md="3"></b-col>
         <b-col lg="4" md="6">
@@ -23,12 +25,12 @@
 </template>
 
 <script>
-import LoginForm from '@/components/LoginForm.vue'
+import LoginForm from "@/components/LoginForm.vue";
 
 export default {
-  name: 'login',
+  name: "login",
   components: {
-    LoginForm
-  }
-}
+    LoginForm,
+  },
+};
 </script>

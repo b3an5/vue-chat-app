@@ -1,13 +1,15 @@
 <template>
   <div class="room-list">
     <h4>Channels</h4>
-    <hr>
+    <hr />
     <b-list-group v-if="activeRoom">
-      <b-list-group-item v-for="room in rooms"
-                        :key="room.name"
-                        :active="activeRoom.id === room.id"
-                        href="#"
-                        @click="onChange(room)">
+      <b-list-group-item
+        v-for="room in rooms"
+        :key="room.name"
+        :active="activeRoom.id === room.id"
+        href="#"
+        @click="onChange(room)"
+      >
         # {{ room.name }}
       </b-list-group-item>
     </b-list-group>
@@ -15,15 +17,12 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from "vuex";
 
 export default {
-  name: 'RoomList',
+  name: "RoomList",
   computed: {
-    ...mapState([
-      'rooms',
-      'activeRoom'
-    ]),
-  }
-}
+    ...mapState(["rooms", "activeRoom"]),
+  },
+};
 </script>
