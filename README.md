@@ -1,4 +1,4 @@
-#pusher has discontinued chatkit so this project has been scrapped
+# pusher has discontinued chatkit so this project has been scrapped
 
 
 # vue-chat-app
